@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Add a New Movie</h2>
+<form id="add-movie-form">
+    <input type="text" id="title" placeholder="Title" required>
+    <input type="text" id="genre" placeholder="Genre" required>
+    <button type="submit">Add Movie</button>
+</form>
+{% endblock %}

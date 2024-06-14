@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Search Movies</h2>
+<form id="search-movie-form">
+    <input type="text" id="search-query" placeholder="Enter title or genre" required>
+    <select id="search-type">
+        <option value="title">Title</option>
+        <option value="genre">Genre</option>
+    </select>
+    <button type="button" onclick="searchMovies()">Search</button>
+</form>
+<div id="search-results"></div>
+{% endblock %}

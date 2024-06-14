@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Delete a Movie</h2>
+<form id="delete-movie-form">
+    <input type="text" id="delete-title" placeholder="Enter movie title to delete" required>
+    <button type="button" onclick="deleteMovie()">Delete</button>
+</form>
+{% endblock %}

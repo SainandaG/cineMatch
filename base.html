@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineMatch</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('add_movie_page') }}">Add Movie</a></li>
+            <li><a href="{{ url_for('search_movie_page') }}">Search Movie</a></li>
+            <li><a href="{{ url_for('recommend_movies_page') }}">Recommend Movies</a></li>
+            <li><a href="{{ url_for('delete_movie_page') }}">Delete Movie</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Recommend Top  Movies</h2>
+<form id="recommend-movies-form">
+    <input type="number" id="top-n" placeholder="Enter number of top movies to recommend" required>
+    <button type="button" onclick="recommendMovies()">Recommend</button>
+</form>
+<div id="recommendations"></div>
+{% endblock %}
